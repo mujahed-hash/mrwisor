@@ -42,9 +42,13 @@ sudo nano .env
 **Paste this content:**
 
 ```env
-JWT_SECRET=28a306c5ecb37124c64a2b68ab09e9041b5e197d8d1f562c8fddb3ab97993aaf359cf0424ab343072158ef536b91ad31fb5368f27ee244363baa48fbc5b7ed72
+JWT_SECRET=your-generated-jwt-secret-here
 PORT=5001
-GEMINI_API_KEY=AIzaSyACZPZJfnP_4VOqPvFPdMsaijukPEvHAns
+GEMINI_API_KEY=your-gemini-api-key-here
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@gmail.com
+SMTP_PASS=your-gmail-app-password
 ```
 
 **Save and exit:**
