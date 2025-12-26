@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext (HTTP) traffic for development -->
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Local development -->
+        <domain includeSubdomains="true">localhost</domain>
+        <!-- Android emulator localhost -->
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <!-- Common local network ranges for testing on physical devices -->
+        <domain includeSubdomains="true">192.168.0.0</domain>
+        <domain includeSubdomains="true">192.168.1.0</domain>
+    </domain-config>
+    
+    <!-- Base config: HTTPS required for all other domains (production) -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
