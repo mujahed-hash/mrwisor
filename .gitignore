@@ -60,3 +60,11 @@ ios/.xcode.env.local
 *.bak
 *.backup
 database.sqlite.bak
+
+# Test files (may contain API keys)
+test_*.js
+test_*.py
+test_*.ts
+**/test_*.js
+**/test_*.py
+**/test_*.ts
