@@ -17,7 +17,7 @@ interface ExtractedData {
 }
 
 // Gemini API - accurate OCR for receipts
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyDUISliRUMMZPaZlUghGVY5ilbInxWq10o';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 /**
  * Compress image for API
