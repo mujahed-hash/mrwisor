@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5001/api', // Hardcoded for now based on server verification
+    baseURL: '/api', // Relative URL - proxied by Nginx in production, Vite proxy in dev
 });
 
 api.interceptors.request.use((config) => {
