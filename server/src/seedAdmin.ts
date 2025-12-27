@@ -19,7 +19,8 @@ const createAdminUser = async () => {
             email: 'admin@wiselyspent.com',
             password: hashedPassword,
             role: 'admin',
-            customId: 'ADMIN001'
+            customId: 'ADMIN001',
+            isVerified: true  // Admin accounts don't need OTP verification
         });
 
         console.log('✅ Admin user created successfully');
