@@ -138,8 +138,8 @@ export default function UserInsightsPage() {
                 <button
                     onClick={() => setActiveTab('global')}
                     className={`px-4 py-2 rounded-lg font-medium ${activeTab === 'global'
-                            ? 'bg-blue-600 text-white'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                 >
                     Global Insights
@@ -147,8 +147,8 @@ export default function UserInsightsPage() {
                 <button
                     onClick={() => setActiveTab('user')}
                     className={`px-4 py-2 rounded-lg font-medium ${activeTab === 'user'
-                            ? 'bg-blue-600 text-white'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                         }`}
                 >
                     User Insights
@@ -364,7 +364,7 @@ export default function UserInsightsPage() {
                                 <div className="bg-white rounded-lg shadow p-6">
                                     <h3 className="text-lg font-semibold mb-4">User's Top Categories</h3>
                                     <div className="space-y-3">
-                                        {userInsights.topCategories.map((cat, idx) => (
+                                        {userInsights.topCategories.map((cat) => (
                                             <div key={cat.category} className="flex items-center justify-between py-2 border-b last:border-0">
                                                 <span className="font-medium capitalize">{cat.category}</span>
                                                 <div className="text-right">
@@ -381,7 +381,7 @@ export default function UserInsightsPage() {
                                     <h3 className="text-lg font-semibold mb-4">User's Frequently Bought Items</h3>
                                     {userInsights.topItems.length > 0 ? (
                                         <div className="space-y-2">
-                                            {userInsights.topItems.map((item, idx) => (
+                                            {userInsights.topItems.map((item) => (
                                                 <div key={item.name} className="flex justify-between items-center py-2 border-b last:border-0">
                                                     <span className="font-medium capitalize">{item.name}</span>
                                                     <span className="text-sm text-gray-600">{item.count}x bought</span>

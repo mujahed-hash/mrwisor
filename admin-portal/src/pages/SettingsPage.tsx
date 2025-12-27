@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Loader2, Settings, Shield, Bell, Database, Zap } from "lucide-react";
+import { Loader2, Shield, Bell, Database, Zap } from "lucide-react";
 
 interface SettingsState {
     ads_enabled: boolean;
