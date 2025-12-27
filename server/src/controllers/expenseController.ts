@@ -155,8 +155,8 @@ export const createExpense = async (req: AuthRequest, res: Response) => {
           const fs = require('fs');
           const { processReceiptImage } = require('../services/ocrService');
 
-          // Use server directory for uploads (more reliable than __dirname)
-          const uploadsDir = path.join(process.cwd(), 'uploads');
+          // Use dist/uploads directory (where multer actually saves files in production)
+          const uploadsDir = path.join(__dirname, '../../uploads');
           console.log(`[Auto-Scan] Uploads directory: ${uploadsDir}`);
 
           // Ensure uploads directory exists

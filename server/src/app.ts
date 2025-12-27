@@ -45,7 +45,7 @@ app.use('/api/upload', uploadRoutes); // Mount upload routes
 app.use('/api/purchases', purchaseItemRoutes);
 app.use('/api/push', pushRoutes);
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5002;
 
 const startServer = async () => {
   try {

@@ -34,5 +34,9 @@ export default defineConfig(({ mode }) => ({
         changeOrigin: true,
       },
     },
+    allowedHosts: [
+      "wiselyspent.com",
+      "www.wiselyspent.com"
+    ],
   },
 }));
